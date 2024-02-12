@@ -137,18 +137,20 @@ document.querySelectorAll('button').forEach(function(button) {
         }
 
         if(e.target.id === "no") {
-            document.querySelector('#particles-js').style.display = "none" 
+            document.querySelectorAll('button').forEach(function(button) {
+    button.addEventListener('click', function(e) {
+        if (e.target.id === 'no') {
+            document.querySelector('#particles-js').style.display = "none"; 
             const messages = [
-                'Pourquoi non? :(', 'Tsisy pti', 'S'il te plait sois ma valentine', 
-                'Ça se voit tu m'aimes pas  :(', 'Diss Ouii', 'Je sais que tu m'aimes pff',
+                'Pourquoi non? :(', 'Tsisy pti', 'S\'il te plait sois ma valentine', 
+                'Ça se voit tu m\'aimes pas :(', 'Diss Ouii', 'Je sais que tu m\'aimes pff',
                 'Mauvaise reponse le pti', 'Tu es vraiment un petit matou', 'Ça fait mal',
-                'Je ne peux pas y croire', 'Okay pas Shein alors', 'T'es serieuse la?',
+                'Je ne peux pas y croire', 'Okay pas Shein alors', 'T\'es serieuse la?',
                 'Tout ça pour ça :('
-            ]
+            ];
             const random = Math.floor(Math.random() * messages.length);
-            document.querySelector('h1').innerText = messages[random]
-            document.querySelector("#gif").src = "https://media.tenor.com/RJgIui1E_2QAAAAj/teddy-bear.gif"
-            
+            document.querySelector('h1').innerText = messages[random];
+            document.querySelector("#gif").src = "https://media.tenor.com/RJgIui1E_2QAAAAj/teddy-bear.gif";
         }
-    })
-})
+    });
+});
