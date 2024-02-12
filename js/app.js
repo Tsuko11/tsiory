@@ -7,9 +7,9 @@ document.querySelectorAll('button').forEach(function(button) {
         if (e.target.id === 'yes') {
             document.querySelector('#particles-js').style.display = "block"
             const messages = [
-                'YAY, I LOVE YOU!', 'This makes me so happy!', 'Yessss!', 'OMG! She said yes :)',
-                'You choose the right answer', 'You made my day', "You've made my heart flutter!",
-                "You're my sunshine on a cloudy day!", "You mean the world to me", 'Y- you actually said yes 🥲'
+                'OUAIISS JE T'AIME!', 'Je suis happy!', 'Yessss!', 'Merci le masisoo :)',
+                'Bonne réponse le petit!', 'Tu me rends heureux!', "Merci pour l'amour!",
+                "Tu es mon rayon de soleil Tsiorintsoa!", "Je tuerais le monde pour toi", 'Elle a d-dis oui 🥲'
                 
             ] 
             const random = Math.floor(Math.random() * messages.length);
