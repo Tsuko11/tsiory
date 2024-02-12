@@ -1,11 +1,4 @@
-const particles = {
-    
-}
-
 document.querySelectorAll('button').forEach(function(button) {
-    button.addEventListener('click', function(e) {
-        if (e.target.id === 'yes') {
-            document.querySelectorAll('button').forEach(function(button) {
     button.addEventListener('click', function(e) {
         if (e.target.id === 'yes') {
             document.querySelector('#particles-js').style.display = "block";
