@@ -5,16 +5,15 @@ const particles = {
 document.querySelectorAll('button').forEach(function(button) {
     button.addEventListener('click', function(e) {
         if (e.target.id === 'yes') {
-            document.querySelector('#particles-js').style.display = "block"
+            document.querySelector('#particles-js').style.display = "block";
             const messages = [
-                'OUAIISS JE T'AIME!', 'Je suis happy!', 'Yessss!', 'Merci le masisoo :)',
+                'OUAIISS JE T\'AIME!', 'Je suis happy!', 'Yessss!', 'Merci le masisoo :)',
                 'Bonne réponse le petit!', 'Tu me rends heureux!', "Merci pour l'amour!",
                 "Tu es mon rayon de soleil Tsiorintsoa!", "Je tuerais le monde pour toi", 'Elle a d-dis oui 🥲'
-                
-            ] 
+            ];
             const random = Math.floor(Math.random() * messages.length);
-            document.querySelector('h1').innerText = messages[random]       
-            document.querySelector('#gif').src = "https://media.tenor.com/Ka7sVbRXQUwAAAAj/tkthao219-bubududu.gif"            
+            document.querySelector('h1').innerText = messages[random];
+            document.querySelector('#gif').src = "https://media.tenor.com/Ka7sVbRXQUwAAAAj/tkthao219-bubududu.gif";
 
             particlesJS('particles-js', {
                 "particles": {
